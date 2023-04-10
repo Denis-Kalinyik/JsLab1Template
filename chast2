@@ -1,0 +1,25 @@
+function letterGrade(percentGrade) {
+    if (percentGrade >= 90) {
+      return 'A';
+    } else if (percentGrade >= 80) {
+      return 'B';
+    } else if (percentGrade >= 70) {
+      return 'C';
+    } else if (percentGrade >= 60) {
+      return 'D';
+    } else {
+      return 'F';
+    }
+  }
+ 
+ 
+  console.log('Running sanity checks for letterGrade:');
+  console.log(letterGrade(95) === 'A');
+  console.log(letterGrade(85) === 'B');
+  console.log(letterGrade(75) === 'C');
+  console.log(letterGrade(65) === 'D');
+  console.log(letterGrade(55) === 'F');
+  console.log(letterGrade(100) === 'A');
+  console.log(letterGrade(0) === 'F');
+  console.log(letterGrade(60) === 'D');
+  console.log(letterGrade(70) === 'C');
